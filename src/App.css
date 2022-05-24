@@ -2,34 +2,45 @@
   margin: 0;
 }
 body{
-  background-color: #ffffe6;
+  background-color: #f7f6ee;
+  background-color: #fff;
   height: 100%;
+  font-family: 'Koulen', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 h2{
   text-align: center;
   color: #302F7E;
+  font-size:2rem;
+  letter-spacing: 0.8rem;
 }
 /*Seccion Header*/
 nav{
   background-color: #302F7E;
-  display:flex;
-  align-self: flex-start;
-  position: fixed;
   width: 100%;
-  z-index: 1;
+  display:flex;
+  position: fixed;
   align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.logoNav img{
+  width:100px;
+  height: auto;
 }
 #nav-bar{
   list-style: none;
-  display: flex;
   padding: 0.8em;
   background-color: #302F7E;
   color:white  ;
-  justify-content: space-evenly;
+  /* font-family: 'Koulen', cursive; */
+  font-family: 'Koulen', cursive;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-items: space-evenly;
   align-items: center;
 }
 .item-nav{
-  justify-self: flex-end;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -51,18 +62,46 @@ nav{
 #heroSection img{
   width: 60%;
   height: 100%;
-
   border: 10px solid white;
   margin: 5rem;
 }
 
-/*Seccion Posts*/
-#post{
-  display: inline-block;
+/*Seccion Blog*/
+#blog{
+  padding: 1em;
+}
+#posts{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   }
-  #post p{
-  width: 30%;
+  .tarjetaPost{
+    margin: 1rem;
+    background-color: transparent;
+    width:30%;
+    text-align:left;
   }
+  .tarjetaPost img{
+    width: 100%;
+    height: 150px;
+    filter: sepia(49%) contrast(91%) invert(3%) ;
+    -webkit-filter: sepia(49%) contrast(91%) invert(3%) ;
+    -moz-filter: sepia(49%) contrast(91%) invert(3%) ;
+  }
+  .tarjetaPost h4{
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .tarjetaPost p{
+    margin-top: 0;
+    padding-top: 0 ;
+    width: fit-content;
+    font-size: 0.9rem;
+    font-weight:100;
+    line-height: 1.2rem;
+  }
+
+  
 /*Seccion Sobre-Nosotros*/
 main{
   display: block;
@@ -85,11 +124,11 @@ main{
   -webkit-filter: sepia(49%) contrast(91%) invert(3%) ;
   -moz-filter: sepia(49%) contrast(91%) invert(3%) ;
   border-radius: 0px 28px 28px 0px;
--webkit-border-radius: 0px 28px 28px 0px;
--moz-border-radius: 0px 28px 28px 0px;
-box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
--webkit-box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
--moz-box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
+  -webkit-border-radius: 0px 28px 28px 0px;
+  -moz-border-radius: 0px 28px 28px 0px;
+  box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
+  -webkit-box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
+  -moz-box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
 }
 #reseña{
   color: white;
@@ -112,7 +151,7 @@ box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
 }
 .tarjeta{
   margin: 1rem;
-  background-color: white;
+  background-color: #f7f6ee;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -129,6 +168,7 @@ box-shadow: 0px 0px 49px 14px rgba(48,47,126,0.51);
 .tarjeta p{
   text-align: center;
   margin-top: 0;
+  text-transform: uppercase;
 }
 /*Sección eventos*/
 
